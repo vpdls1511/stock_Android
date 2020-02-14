@@ -120,7 +120,6 @@
             android:ems="10"
             android:gravity="center|right"
             android:hint="추매 단가"
-            android:text="."
             android:inputType="number" />
     </RelativeLayout>
 
