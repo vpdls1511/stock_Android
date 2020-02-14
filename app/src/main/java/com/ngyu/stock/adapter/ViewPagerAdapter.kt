@@ -1,13 +1,12 @@
-package com.ngyu.stock
+package com.ngyu.stock.adapter
 
-import android.transition.ChangeClipBounds
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.ngyu.stock.fragments.AverageFragment
-import com.ngyu.stock.fragments.ContinuityFragment
-import com.ngyu.stock.fragments.CostFragment
-import com.ngyu.stock.fragments.RevenueFragment
+import com.ngyu.stock.ui.fragments.AverageFragment
+import com.ngyu.stock.ui.fragments.ContinuityFragment
+import com.ngyu.stock.ui.fragments.CostFragment
+import com.ngyu.stock.ui.fragments.RevenueFragment
 
 class ViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
 

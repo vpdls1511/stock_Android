@@ -1,9 +1,11 @@
-package com.ngyu.stock
+package com.ngyu.stock.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
+import com.ngyu.stock.R
+import com.ngyu.stock.adapter.ViewPagerAdapter
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,7 +14,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val viewPagerAdapter = ViewPagerAdapter(supportFragmentManager)
+        val viewPagerAdapter =
+            ViewPagerAdapter(supportFragmentManager)
         val pager = findViewById<ViewPager>(R.id.container)
         pager.adapter = viewPagerAdapter
 

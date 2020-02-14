@@ -1,4 +1,4 @@
-package com.ngyu.stock.fragments
+package com.ngyu.stock.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

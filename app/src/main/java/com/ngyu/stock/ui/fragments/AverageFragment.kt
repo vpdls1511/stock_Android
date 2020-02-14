@@ -1,19 +1,16 @@
-package com.ngyu.stock.fragments
+package com.ngyu.stock.ui.fragments
 
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import androidx.fragment.app.Fragment
 import com.ngyu.stock.R
 import kotlinx.android.synthetic.main.average_stock.*
 import kotlinx.android.synthetic.main.average_stock.view.*
 import java.text.DecimalFormat
-import kotlin.math.log
 
 open class AverageFragment: Fragment()
 {

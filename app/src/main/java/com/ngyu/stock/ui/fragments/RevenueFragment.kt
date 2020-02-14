@@ -1,4 +1,4 @@
-package com.ngyu.stock.fragments
+package com.ngyu.stock.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,13 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.ngyu.stock.R
 
-open class CostFragment: Fragment()
+open class RevenueFragment : Fragment()
 {
-    fun newInstance(): CostFragment
+    fun newInstance(): RevenueFragment
     {
         val args = Bundle()
 
-        val frag = CostFragment()
+        val frag = RevenueFragment()
         frag.arguments = args
 
         return frag
@@ -21,7 +21,7 @@ open class CostFragment: Fragment()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?
     {
-        val v = inflater.inflate(R.layout.cost_stock, container, false)
+        val v = inflater.inflate(R.layout.revenue_stock, container, false)
         return v
     }
 }
