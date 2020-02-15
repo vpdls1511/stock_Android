@@ -59,7 +59,7 @@
             android:background="@android:color/transparent"
             android:ems="10"
             android:gravity="center|right"
-            android:hint="보유 단가"
+            android:hint="보유 수량"
             android:inputType="number" />
     </RelativeLayout>
 
@@ -119,7 +119,7 @@
             android:background="@android:color/transparent"
             android:ems="10"
             android:gravity="center|right"
-            android:hint="추매 단가"
+            android:hint="추매 수량"
             android:inputType="number" />
     </RelativeLayout>
 

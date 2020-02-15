@@ -8,9 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.ngyu.stock.R
+import com.ngyu.stock.module.makeCommaNumberInt
 import kotlinx.android.synthetic.main.average_stock.*
 import kotlinx.android.synthetic.main.average_stock.view.*
-import java.text.DecimalFormat
+
 
 open class AverageFragment: Fragment()
 {
@@ -34,14 +35,19 @@ open class AverageFragment: Fragment()
                 override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
 
 
-                    val num1: Int = Integer.parseInt(until_pirce1.text.toString())
-                    val num2: Int = Integer.parseInt(quantity1.text.toString())
-                    val num3: Int = Integer.parseInt(until_pirce2.text.toString())
-                    val num4: Int = Integer.parseInt(quantity2.text.toString())
+                    var num1 = until_pirce1.text.toString()
+                    var num2 = quantity1.text.toString()
+                    var num3 = until_pirce2.text.toString()
+                    var num4 = quantity2.text.toString()
+
+                    if(num1==""){ num1 = "0" }
+                    if(num2==""){ num2 = "0" }
+                    if(num3==""){ num3 = "0" }
+                    if(num4==""){ num4 = "0" }
 
 
-                    val result = ((num1 * num2) + (num3 * num4)) / (num2 + num4)
-                    val comma = makeCommaNumber(result)
+                    val result = ((num1.toInt() * num2.toInt()) + (num3.toInt() * num4.toInt())) / (num2.toInt() + num4.toInt())
+                    val comma = makeCommaNumberInt(result)
                     averagePrice.setText(comma.toString() + " 원")
                 }
             })
@@ -49,9 +55,6 @@ open class AverageFragment: Fragment()
         return v
     }
 
-    fun makeCommaNumber(input:Int):String{
-        val fomatter = DecimalFormat("###,###")
-        return fomatter.format(input)
-    }
+
 
 }
