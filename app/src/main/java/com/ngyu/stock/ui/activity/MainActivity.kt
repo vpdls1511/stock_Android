@@ -14,8 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val viewPagerAdapter =
-            ViewPagerAdapter(supportFragmentManager)
+        val viewPagerAdapter = ViewPagerAdapter(supportFragmentManager)
         val pager = findViewById<ViewPager>(R.id.container)
         pager.adapter = viewPagerAdapter
 

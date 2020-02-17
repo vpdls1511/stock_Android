@@ -40,10 +40,10 @@ open class AverageFragment: Fragment()
                     var num3 = until_pirce2.text.toString()
                     var num4 = quantity2.text.toString()
 
-                    if(num1==""){ num1 = "0" }
-                    if(num2==""){ num2 = "0" }
-                    if(num3==""){ num3 = "0" }
-                    if(num4==""){ num4 = "0" }
+                    if(num1==""){ num1 = "1" }
+                    if(num2==""){ num2 = "1" }
+                    if(num3==""){ num3 = "1" }
+                    if(num4==""){ num4 = "1" }
 
 
                     val result = ((num1.toInt() * num2.toInt()) + (num3.toInt() * num4.toInt())) / (num2.toInt() + num4.toInt())

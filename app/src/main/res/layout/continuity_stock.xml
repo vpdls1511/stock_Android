@@ -1,11 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/bottom_navigation_view_linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="연속 상/하한가" />
+        android:background="#ffffff"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_icon="@drawable/calculator"
+            app:bt_colorActive="#399048"
+            app:bt_colorInactive="#399048"
+            app:bt_title="first"
+            app:bt_padding="12sp"
+            app:bt_titleSize="12sp"
+            app:bt_iconHeight="12sp"
+            />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_home2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_icon="@drawable/calculator"
+            app:bt_colorActive="#0d09fa"
+            app:bt_colorInactive="#399048"
+            app:bt_title="first"
+            app:bt_padding="12sp"
+            app:bt_titleSize="12sp"
+            app:bt_iconHeight="12sp" />
+
+        <!-- Add more child items here - max upto 5 -->
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
 </LinearLayout>
