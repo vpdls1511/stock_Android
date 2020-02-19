@@ -7,5 +7,110 @@
     android:layout_height="match_parent">
 
 
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연속 상한가"
+            />
+
+        <RadioButton
+            android:id="@+id/radioDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연속 하한가"
+            />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:gravity="center"
+            android:text="원"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/until_pirce1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:autofillHints=""
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center|right"
+            android:hint="현재매수 단가"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/percentStock"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center|right"
+            android:hint="연속"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:gravity="center"
+            android:text="번"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+            <EditText
+                android:id="@+id/repeatCount"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:gravity="center|right"
+                android:hint="연속"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:gravity="center"
+                android:text="번"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
