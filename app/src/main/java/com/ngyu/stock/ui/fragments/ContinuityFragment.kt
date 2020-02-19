@@ -28,24 +28,7 @@ open class ContinuityFragment : Fragment()
     {
         val v = inflater.inflate(R.layout.continuity_stock, container, false)
 
-        val viewPagerAdapter = RevenueViewPagerAdpater( childFragmentManager )
-        val bubbleNavigationLinearView = v.findViewById<BubbleNavigationLinearView>(R.id.bottom_navigation_view_linear)
-        val pager = v.findViewById<ViewPager>(R.id.revenuSub)
 
-        pager.adapter = viewPagerAdapter
-        pager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener{
-            override fun onPageScrollStateChanged(state: Int) {}
-
-            override fun onPageScrolled(
-                position: Int,
-                positionOffset: Float,
-                positionOffsetPixels: Int
-            ) {}
-
-            override fun onPageSelected(position: Int) {
-                bubbleNavigationLinearView.setCurrentActiveItem(position)
-            }
-        })
 
         return v
     }

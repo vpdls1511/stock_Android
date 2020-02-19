@@ -7,6 +7,7 @@ import com.ngyu.stock.ui.fragments.revenues.Revenue_1_Fragment
 import com.ngyu.stock.ui.fragments.revenues.Revenue_2_Fragment
 
 class RevenueViewPagerAdpater (fm : FragmentManager) : FragmentPagerAdapter(fm) {
+
     val PAGE_MAX_CNT = 2
 
     override fun getCount(): Int {
@@ -25,7 +26,7 @@ class RevenueViewPagerAdpater (fm : FragmentManager) : FragmentPagerAdapter(fm) 
     override fun getPageTitle(position: Int) : CharSequence? {
         val title = when(position){
 
-            1 -> "목표수익률esfasdfasdfasdfasdfa"
+            1 -> "목표수익률"
             else -> "수익률"
         }
 

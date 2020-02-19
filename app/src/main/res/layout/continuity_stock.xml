@@ -6,51 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-        <com.gauravk.bubblenavigation.BubbleNavigationLinearView
-            android:id="@+id/bottom_navigation_view_linear"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#ffffff"
-            android:elevation="8dp"
-            android:orientation="horizontal"
-            android:padding="12dp">
 
-            <com.gauravk.bubblenavigation.BubbleToggleView
-                android:id="@+id/l_first_item"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:bt_active="true"
-                app:bt_icon="@drawable/calculator"
-                app:bt_colorActive="@color/colorAccent"
-                app:bt_colorInactive="#399048"
-                app:bt_title="수익률"
-                app:bt_padding="12sp"
-                app:bt_titleSize="12sp"
-                app:bt_iconHeight="12sp"
-                />
-
-            <com.gauravk.bubblenavigation.BubbleToggleView
-                android:id="@+id/l_second_item"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:bt_active="true"
-                app:bt_icon="@drawable/calculator"
-                app:bt_colorActive="@color/colorAccent"
-                app:bt_colorInactive="#399048"
-                app:bt_title="목표 수익률"
-                app:bt_padding="12sp"
-                app:bt_titleSize="12sp"
-                app:bt_iconHeight="12sp" />
-
-            <!-- Add more child items here - max upto 5 -->
-
-        </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
-
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/revenuSub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
 
 </LinearLayout>

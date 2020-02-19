@@ -3,9 +3,73 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="수익률" />
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:gravity="center"
+            android:text="원"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/until_pirce1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:autofillHints=""
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center|right"
+            android:hint="현재매수 단가"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:gravity="center"
+            android:text="원"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/until_price2"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:autofillHints=""
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center|right"
+            android:hint="추가매수 단가"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/revenuPrice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="0%"
+        android:textSize="20sp" />
 </LinearLayout>
