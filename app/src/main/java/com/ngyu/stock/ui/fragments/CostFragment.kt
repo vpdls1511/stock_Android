@@ -22,6 +22,11 @@ open class CostFragment: Fragment()
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?
     {
         val v = inflater.inflate(R.layout.cost_stock, container, false)
+
+
+
+
+
         return v
     }
 }

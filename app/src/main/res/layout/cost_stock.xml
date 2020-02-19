@@ -7,5 +7,8 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="매도/매수/재" />
+        android:text="매도/매수/재비용" />
+
+
+
 </LinearLayout>
